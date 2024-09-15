@@ -1,0 +1,10 @@
+.parent{
+    background-color: green;
+    margin-top: 20px;
+    text-align: center;
+}
+.child{
+    background-color: brown;
+    margin-top: 20px;
+    text-align: center;
+}

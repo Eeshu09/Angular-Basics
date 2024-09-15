@@ -1,0 +1,21 @@
+<!-- <app-child [ch]="item"></app-child> -->
+
+<p class="parent">Parent Component</p>
+<div>
+<select [(ngModel)]="selectValue" (change)="onChangeValue($event)" aria-placeholder="select value">
+  <option value="" disabled selected>{{ selectValue ? selectValue : 'Select Value' }}</option>
+
+    <option *ngFor="let u of dropdown" [value]="u">{{u}}</option>
+  </select>
+</div>
+<p class="child">Child Component</p>
+<!-- <app-child [ch]="selectedValue"></app-child> -->
+
+
+<app-child (arrayToSend)="handleArrayFromChild($event)" [ch]="selectedValue"></app-child>
+<ul>
+<!-- 
+    <li *ngFor="let u of dropdown">{{u}}</li>
+
+
+</ul> -->

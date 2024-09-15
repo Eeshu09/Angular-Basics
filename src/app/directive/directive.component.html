@@ -1,0 +1,13 @@
+<p>directive works!</p>
+<!-- @if(false){
+    <h1>True</h1>
+} -->
+
+<button (click)="login()" [ngClass]="islogIn?'login':'logout'">{{islogIn?"LogOut":"logIn"}}</button>
+@if(islogIn){
+    <h1>User is Login</h1>
+}
+@else{
+    <h1>User is Logout</h1>
+} 
+<div [ngStyle] ="{'background-color':islogIn?'green':'red'}">Welcome</div>

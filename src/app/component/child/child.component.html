@@ -1,0 +1,7 @@
+<!-- <p>{{ch.name}}</p>
+<p>{{ch.age}}</p>
+<p>{{ch.Desination}}</p> -->
+<p *ngIf="ch">You selected: {{ ch }}</p>
+
+<input type="text"[(ngModel)]="inputData" >
+<button type="button" (click)="submitData()">submit</button>
